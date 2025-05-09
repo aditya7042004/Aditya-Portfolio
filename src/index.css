@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+/* Global Styles */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  @apply bg-neutral-900 text-white;
+}
+
+/* Custom Animations */
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-up {
+  animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fade-in {
+  animation: fadeIn 1s ease forwards;
+}
+
+/* Gradient Text */
+.gradient-text {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-500 text-transparent bg-clip-text;
+}
+
+/* Custom Button Styles */
+.btn-primary {
+  @apply px-8 py-3 bg-cyan-500 text-white font-medium rounded-full hover:bg-cyan-600 transition-all duration-300 transform hover:scale-105;
+}
+
+.btn-outline {
+  @apply px-8 py-3 bg-transparent text-white font-medium rounded-full border border-cyan-500 hover:bg-cyan-500/20 transition-all duration-300 transform hover:scale-105;
+}
+
+/* Progress Bar Animation */
+.skill-progress {
+  @apply bg-gradient-to-r from-cyan-400 to-blue-500 h-2.5 rounded-full transition-all duration-1000;
+}
+
+/* Project Card Styles */
+.project-card {
+  @apply bg-neutral-800 rounded-lg overflow-hidden transition-transform duration-300 hover:transform hover:scale-105 shadow-lg;
+}
+
+.project-card-image {
+  @apply h-48 overflow-hidden;
+}
+
+.project-card-image img {
+  @apply w-full h-full object-cover transition-transform duration-700 hover:scale-110;
+}
+
+/* Section Spacing */
+section {
+  @apply py-20;
+}
+
+/* Section Headings */
+.section-heading {
+  @apply text-3xl md:text-4xl font-bold mb-12 text-center;
+}
