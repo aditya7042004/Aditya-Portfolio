@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
           
           <div className="flex flex-col sm:flex-row justify-center gap-4 opacity-0 animate-fade-up" style={{ animationDelay: '0.6s' }}>
             <a 
-              href="https://drive.google.com/file/d/1HiNPeA06nouIt9Qidp8DQe3xDDoE0bEs/view?usp=drive_link" 
+              href="https://drive.google.com/file/d/1GE08ljion1iCwi8uh58O9hreEvRxM7YC/view" 
               className="px-8 py-3 bg-cyan-500 text-white font-medium rounded-full hover:bg-cyan-600 transition-all duration-300 transform hover:scale-105"
             >
               Resume
